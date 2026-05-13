@@ -6,6 +6,6 @@ class Solution:
             dp.append( (min(dp[i-1] , dp[i-2]))+cost[i] ) 
             #print(min(dp[i-1] , dp[i-2]))
         #print(dp)
-        return min(dp[len(cost)-2],dp[len(cost)-1])
+        return min(dp[-2],dp[-1])
 
 
