@@ -3,7 +3,6 @@
 WITH cte AS (
     SELECT stock_name,operation, SUM(price) AS cost FROM Stocks 
     GROUP BY stock_name, operation
-    ORDER BY stock_name, operation
 ),
 cte2 as (
     SELECT stock_name, 
